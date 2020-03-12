@@ -1,0 +1,263 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+::selection {
+  background: var(--color-selection-highlight);
+  color: var(--color-dark-mode-text);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  color: var(--default-text-color);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-primary);
+  font-size: var(--font-size-body);
+  font-weight: 400;
+  line-height: var(--default-line-height);
+  position: relative;
+}
+
+main {
+  padding-top: var(--header-height);
+}
+
+section {
+  padding: var(--section-padding);
+}
+
+a[href],
+input[type='submit'],
+input[type='image'],
+label[for],
+select,
+button {
+  cursor: pointer;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color var(--transition-speed-link);
+}
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+  line-height: var(--heading-line-height);
+}
+
+h1,
+h2 {
+  color: var(--blue-70);
+  font-weight: bold;
+  margin-bottom: var(--layout-3);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+h2 {
+  font-size: var(--font-size-h2);
+}
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: 300;
+  margin-bottom: var(--layout-2);
+}
+
+p {
+  margin-bottom: var(--layout-1);
+}
+
+mark {
+  font-style: normal;
+}
+
+small {
+  font-size: var(--font-size-small);
+}
+
+ul {
+  margin-left: 20px; /* Lines up the bullets with where the text itself would normally be */
+}
+
+label[for]::after {
+  content: ':';
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea {
+  border: 1px solid var(--default-border-color);
+  display: block;
+  font-size: 1em;
+  margin-bottom: var(--layout-2);
+  outline: 0;
+  padding: var(--spacing-3);
+  transition: border-color var(--transition-speed-input) ease-in-out;
+  width: 100%;
+}
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='tel']:focus,
+textarea:focus {
+  border-color: var(--active-border-color);
+}
+textarea {
+  height: var(--default-textarea-height);
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+}
+
+button,
+.button {
+  border: 0;
+  display: inline-block;
+  font-size: var(--font-size-body);
+  font-weight: bold;
+  outline: 0;
+  padding: var(--spacing-5);
+  text-align: center;
+  transition: ease-in background-color var(--transition-speed-button), ease-in transform var(--transition-speed-button);
+  white-space: nowrap;
+}
+button:hover,
+.button:hover {
+  box-shadow: var(--button-hover-shadow);
+  transform: scale(var(--button-hover-scalar));
+}
+button:focus,
+.button:focus {
+  outline: var(--button-outline-width) solid var(--button-outline-color);
+  outline-offset: var(--button-outline-width);
+}
+button:focus:active,
+.button:focus:active {
+  outline: none;
+}
+button:active,
+.button:active {
+  box-shadow: var(--button-active-shadow);
+  transform: scale(var(--button-click-scalar));
+}
+
+blockquote {
+  font-size: var(--font-size-h3);
+  line-height: var(--default-line-height);
+}
+
+figure {
+  margin-bottom: var(--layout-2);
+}
+figure img {
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption {
+  font-size: var(--font-size-body);
+  line-height: var(--default-line-height);
+  margin-bottom: var(--layout-3);
+}
+
+/* Web Component Styles */
+x-waves {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+/* Utility Classes */
+.clearfix::before {
+  content: '';
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+
+.noBreak {
+  white-space: nowrap;
+}
+
+.textShadow {
+  text-shadow: var(--contrast-text-shadow);
+}
+
+.textCenter {
+  text-align: center;
+}
+.textRight {
+  text-align: right;
+}
+
+.truncate {
+  /* truncate text if it exceeds parent */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.desktop {
+  display: var(--desktop-display) !important;
+}
+.desktopFlex {
+  display: var(--desktop-flex-display) !important;
+}
+.mobile {
+  display: var(--mobile-display) !important;
+}
+.mobileFlex {
+  display: var(--mobile-flex-display) !important;
+}
+
+.darkModePrimaryButton:hover,
+.primaryButton:hover {
+  text-decoration: none;
+}
+
+.primaryButton {
+  background-color: var(--color-link);
+  color: var(--color-dark-mode-text);
+}
+.primaryButton:hover {
+  background-color: var(--color-link-hover);
+  color: var(--color-dark-mode-text);
+}
+
+.darkModePrimaryButton {
+  background-color: white;
+  color: var(--color-link);
+}
+.darkModePrimaryButton:hover {
+  color: var(--color-link);
+}
