@@ -109,6 +109,10 @@ label[for]::after {
   content: ':';
 }
 
+fieldset {
+  margin-bottom: var(--layout-2);
+}
+
 input[type='date'],
 input[type='datetime-local'],
 input[type='email'],
@@ -122,7 +126,6 @@ textarea {
   border: 1px solid var(--default-border-color);
   display: block;
   font-size: 1em;
-  margin-bottom: var(--layout-2);
   outline: 0;
   padding: var(--spacing-3);
   transition: border-color var(--transition-speed-input) ease-in-out;
