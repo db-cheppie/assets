@@ -156,10 +156,12 @@ button:focus,
 
 button,
 .button {
+  align-items: center;
   border: 0;
-  display: inline-block;
+  display: inline-flex;
   font-size: var(--font-size-body);
   font-weight: bold;
+  justify-content: center;
   outline: 0;
   padding: var(--spacing-5);
   text-align: center;
@@ -198,51 +200,6 @@ button[disabled]:focus,
   color: var(--default-text-color);
   cursor: default;
   transform: none;
-}
-
-button[disabled].busy::after,
-.button[disabled].busy::after {
-  border-color: #0004;
-  border-top-color: black;
-}
-
-button.busy,
-.button.busy {
-  --border-width: 2px;
-  --size: var(--spacing-5);
-  --bg-border-color: #fff4;
-  padding-left: var(--size);
-  position: relative;
-}
-button.busy::before,
-.button.busy::before {
-  content: '';
-  display: inline-block;
-  width: calc(var(--size) + var(--spacing-4));
-}
-button.busy::after,
-.button.busy::after {
-  animation: spin 1s infinite linear;
-  border: var(--border-width) var(--bg-border-color) solid;
-  border-radius: 50%;
-  border-top: var(--border-width) white solid;
-  content: '';
-  display: inline-block;
-  height: var(--size);
-  left: 0;
-  margin: calc(-0.5 * var(--size) - var(--border-width)) 0 0 var(--spacing-5);
-  position: absolute;
-  top: 50%;
-  width: var(--size);
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(359deg);
-  }
 }
 
 blockquote {
