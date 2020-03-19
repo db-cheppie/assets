@@ -230,16 +230,6 @@ figcaption {
   clear: both;
 }
 
-.error {
-  background-color: var(--color-error-background);
-  border: thin solid var(--color-error);
-  color: var(--color-error);
-  font-size: var(--font-size-small);
-  line-height: var(--default-line-height);
-  margin-top: var(--spacing-3);
-  padding: var(--spacing-3);
-}
-
 .noBreak {
   white-space: nowrap;
 }
