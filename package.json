@@ -4,7 +4,8 @@
   "description": "A single source of truth for public DataBased assets such as CSS and images.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/db-cheppie/assets.git"
+    "url": "git+https://github.com/db-cheppie/assets.git",
+    "postversion": "git push && git push --tags"
   },
   "author": "DataBased",
   "license": "MIT",
