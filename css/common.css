@@ -260,6 +260,7 @@ figcaption {
 
 .summaryLink {
   color: var(--color-link);
+  cursor: pointer;
   text-decoration: none;
   transition: color var(--transition-speed-link);
 }
