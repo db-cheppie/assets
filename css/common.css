@@ -245,6 +245,10 @@ figcaption {
   height: 100%;
 }
 
+.pageContent {
+  padding-top: var(--header-height);
+}
+
 .textShadow {
   text-shadow: var(--contrast-text-shadow);
 }
