@@ -67,8 +67,13 @@ h6 {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   color: var(--blue-70);
+}
+
+h1,
+h2 {
   font-weight: bold;
   margin-bottom: var(--layout-3);
 }
