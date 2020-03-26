@@ -106,6 +106,10 @@ ul {
   margin-left: 20px; /* Lines up the bullets with where the text itself would normally be */
 }
 
+details {
+  margin-bottom: var(--layout-1);
+}
+
 label[for]::after {
   content: ':';
 }
@@ -254,6 +258,19 @@ figcaption {
   margin-top: var(--header-height);
 }
 
+.summaryLink {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color var(--transition-speed-link);
+}
+.summaryLink:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+.summaryLink:focus {
+  outline: thin dotted;
+}
+
 .textShadow {
   text-shadow: var(--contrast-text-shadow);
 }
@@ -261,6 +278,7 @@ figcaption {
 .textCenter {
   text-align: center;
 }
+
 .textRight {
   text-align: right;
 }
@@ -275,12 +293,15 @@ figcaption {
 .desktop {
   display: var(--desktop-display) !important;
 }
+
 .desktopFlex {
   display: var(--desktop-flex-display) !important;
 }
+
 .mobile {
   display: var(--mobile-display) !important;
 }
+
 .mobileFlex {
   display: var(--mobile-flex-display) !important;
 }
