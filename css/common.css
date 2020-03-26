@@ -30,10 +30,6 @@ body {
   position: relative;
 }
 
-main {
-  padding-top: var(--header-height);
-}
-
 section {
   padding: var(--section-padding);
 }
@@ -241,6 +237,12 @@ figcaption {
 
 .noBreak {
   white-space: nowrap;
+}
+
+.page {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  height: 100%;
 }
 
 .textShadow {
