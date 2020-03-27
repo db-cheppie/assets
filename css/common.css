@@ -239,6 +239,13 @@ figcaption {
   clear: both;
 }
 
+a.danger {
+  color: var(--color-error);
+}
+a.danger:hover {
+  color: var(--color-danger);
+}
+
 .error,
 .success {
   font-size: var(--font-size-small);

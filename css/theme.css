@@ -64,6 +64,7 @@
   --color-information: #204596;
   --color-warning: #fdca40;
   --color-error: #e01f3c;
+  --color-danger: #cc1430;
   --color-error-background: #ffe0e5;
   --color-selection-highlight: var(--blue-40);
 
