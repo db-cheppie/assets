@@ -110,6 +110,10 @@ details {
   margin-bottom: var(--layout-1);
 }
 
+summary {
+  cursor: pointer;
+}
+
 label[for]::after {
   content: ':';
 }
@@ -276,7 +280,6 @@ details[open] .summaryLink {
 
 .summaryLink {
   color: var(--color-link);
-  cursor: pointer;
   text-decoration: none;
   transition: color var(--transition-speed-link);
 }
