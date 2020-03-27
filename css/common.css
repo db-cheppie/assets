@@ -235,13 +235,17 @@ figcaption {
   clear: both;
 }
 
+.error,
+.success {
+  font-size: var(--font-size-small);
+  line-height: var(--default-line-height);
+  padding: var(--spacing-3);
+}
+
 .error {
   background-color: var(--color-error-background);
   border: thin solid var(--color-error);
   color: var(--color-error);
-  font-size: var(--font-size-small);
-  line-height: var(--default-line-height);
-  padding: var(--spacing-3);
 }
 
 .noBreak {
@@ -256,6 +260,12 @@ figcaption {
 
 .pageContent {
   margin-top: var(--header-height);
+}
+
+.success {
+  background-color: var(--color-success-background);
+  border: thin solid var(--color-success);
+  color: var(--color-success);
 }
 
 details[open] .summaryLink {

@@ -60,6 +60,7 @@
   --color-link-hover: var(--color-primary-shade);
   --color-dark-mode-text: white;
   --color-success: #00a04a;
+  --color-success-background: #e9f5ee;
   --color-information: #204596;
   --color-warning: #fdca40;
   --color-error: #e01f3c;
