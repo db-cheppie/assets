@@ -246,6 +246,10 @@ a.danger:hover {
   color: var(--color-danger);
 }
 
+input.edited {
+  border: medium solid var(--color-link);
+}
+
 .error,
 .success {
   font-size: var(--font-size-small);
