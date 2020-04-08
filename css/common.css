@@ -131,8 +131,9 @@ input[type='tel'],
 input[type='text'],
 input[type='time'],
 input[type='url'],
+select,
 textarea {
-  border: 1px solid var(--default-border-color);
+  border: thin solid var(--default-border-color);
   display: block;
   font-size: 1em;
   outline: 0;
@@ -149,6 +150,7 @@ input[type='tel']:focus,
 input[type='text']:focus,
 input[type='time']:focus,
 input[type='url']:focus,
+select:focus,
 textarea:focus {
   border-color: var(--active-border-color);
 }
