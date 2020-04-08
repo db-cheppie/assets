@@ -158,6 +158,11 @@ textarea {
   height: var(--default-textarea-height);
 }
 
+select {
+  background-color: white;
+  height: var(--spacing-8);
+}
+
 button:hover,
 button:focus,
 .button:hover,
