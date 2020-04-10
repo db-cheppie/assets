@@ -227,12 +227,19 @@ th,
 td {
   border-top: thin solid var(--default-border-color);
   padding: var(--spacing-3);
+  text-align: center;
+}
+th:first-child,
+td:first-child {
   text-align: left;
+}
+th:last-child,
+td:last-child {
+  text-align: right;
 }
 
 th {
   border-bottom: 2px solid var(--default-border-color);
-  padding-left: 0;
 }
 
 .table-hover tbody tr:hover {
