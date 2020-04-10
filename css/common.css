@@ -218,6 +218,28 @@ button[disabled]:focus,
   transform: none;
 }
 
+table {
+  margin-bottom: var(--layout-2);
+  width: 100%;
+}
+
+th,
+td {
+  border-top: thin solid var(--default-border-color);
+  padding: var(--spacing-3);
+  text-align: left;
+}
+
+th {
+  border-bottom: 2px solid var(--default-border-color);
+  padding-left: 0;
+}
+
+.table-hover tbody tr:hover {
+  cursor: pointer;
+  background-color: var(--cool-gray-10);
+}
+
 blockquote {
   font-size: var(--font-size-h3);
   line-height: var(--default-line-height);
