@@ -287,6 +287,13 @@ textarea.edited {
   border: medium solid var(--color-link);
 }
 
+input[disabled],
+textarea[disabled] {
+  background-color: var(--cool-gray-20);
+  border-color: var(--cool-gray-30);
+  cursor: not-allowed;
+}
+
 .error,
 .success {
   font-size: var(--font-size-small);
