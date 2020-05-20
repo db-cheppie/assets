@@ -282,7 +282,8 @@ a.danger:hover {
   color: var(--color-danger);
 }
 
-input.edited {
+input.edited,
+textarea.edited {
   border: medium solid var(--color-link);
 }
 
