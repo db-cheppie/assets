@@ -102,6 +102,8 @@
   --desktop-flex-display: flex;
 
   --max-content-width: 1200px;
+
+  --layer-raised: 10;
 }
 
 @media only screen and (min-width: 950px) {
