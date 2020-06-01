@@ -266,6 +266,39 @@ figcaption {
   margin-bottom: var(--layout-3);
 }
 
+progress {
+  --progress-height: var(--layout-2);
+  --white-overlay: rgba(255, 255, 255, .25);
+  --black-overlay: rgba(0, 0, 0, .25);
+  --stripe-overlay: rgba(0, 0, 0, .1);
+  --progress-background-size: calc(2 * var(--progress-height)) var(--progress-height), 100% 100%, 100% 100%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  height: var(--progress-height);
+  width: 100%;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: var(--progress-background-color);
+  box-shadow: var(--progress-box-shadow);
+}
+progress[value]::-webkit-progress-value {
+  background-image:
+      -webkit-linear-gradient(-45deg, transparent 33%, var(--stripe-overlay) 33%, var(--stripe-overlay) 66%, transparent 66%),
+      -webkit-linear-gradient(top, var(--white-overlay), var(--black-overlay)),
+      -webkit-linear-gradient(left, var(--sea-green-50), var(--blue-60));
+  background-size: var(--progress-background-size);
+}
+progress[value]::-moz-progress-bar {
+  background-image:
+    -moz-linear-gradient(135deg, transparent 33%, var(--stripe-overlay) 33%, var(--stripe-overlay) 66%, transparent 66%),
+    -moz-linear-gradient(top, var(--white-overlay), var(--black-overlay)),
+    -moz-linear-gradient(left, var(--sea-green-50), var(--blue-60));
+  background-size: var(--progress-background-size);
+}
+
 /* Utility Classes */
 .clearfix::before {
   content: '';

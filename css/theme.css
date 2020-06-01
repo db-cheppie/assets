@@ -73,6 +73,7 @@
 
   --default-border-color: #ddd;
   --active-border-color: var(--color-primary);
+  --progress-background-color: #eee;
 
   --default-text-color: var(--cool-gray-100);
   --default-textarea-height: 125px;
@@ -81,6 +82,7 @@
   --heading-line-height: 1.2em;
   --header-height: 56px;
   --header-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  --progress-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 
   --button-hover-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   --button-active-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.3);
