@@ -414,8 +414,10 @@ details[open] .summaryLink {
   display: var(--mobile-flex-display) !important;
 }
 
+.primaryButton:hover,
 .darkModePrimaryButton:hover,
-.primaryButton:hover {
+.secondaryButton:hover,
+.dangerButton:hover {
   text-decoration: none;
 }
 
@@ -434,4 +436,29 @@ details[open] .summaryLink {
 }
 .darkModePrimaryButton:hover {
   color: var(--color-link);
+}
+
+.secondaryButton,
+.dangerButton {
+  background-color: transparent;
+  border-style: solid;
+  border-width: medium;
+}
+
+.secondaryButton {
+  border-color: var(--color-link);
+  color: var(--color-link);
+}
+.secondaryButton:hover {
+  border-color: var(--color-link-hover);
+  color: var(--color-link-hover);
+}
+
+.dangerButton {
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+}
+.dangerButton:hover {
+  border-color: var(--color-danger);
+  color: var(--color-danger);
 }
