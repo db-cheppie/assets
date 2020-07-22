@@ -66,6 +66,7 @@
   --color-error: #e01f3c;
   --color-danger: #cc1430;
   --color-error-background: #ffe0e5;
+  --color-skeleton: #eff0f2;
   --color-selection-highlight: var(--blue-40);
 
   --default-background-color: white;
@@ -83,6 +84,8 @@
   --header-height: 56px;
   --header-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   --progress-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+
+  --animation-skeleton: load-skeleton 0.75s infinite alternate;
 
   --button-hover-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   --button-active-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.3);
@@ -156,5 +159,11 @@
     --desktop-flex-display: none;
 
     --section-padding: var(--layout-4);
+  }
+}
+
+@keyframes load-skeleton {
+  from {
+    opacity: 0;
   }
 }
